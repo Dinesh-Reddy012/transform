@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          .div1{
+            border:2px solid;
+            width:250px;
+            background-color: bisque;
+            padding: 20px;
+        }
+        
+        .div2{
+            border: 2px solid;
+            height: 150px;
+            width:150px;
+            margin: auto;
+            margin-top: 200px;
+        
+            background-color: aqua;
+        }
+        #none:checked~.div2{
+            transform:none;
+        }
+        #one:checked~.div2{
+            transform:rotate(10deg);
+        }
+        #two:checked~.div2{
+            transform:rotate(45deg);
+        }
+        #three:checked~.div2{
+            transform:rotate3d(1,2,1,45deg);
+        }
+        #four:checked~.div2{
+            transform:skewX(45deg);
+        }
+        #five:checked~.div2{
+            transform:skewy(45deg);
+        }
+        #six:checked~.div2{
+            transform:scale(2,2);
+        }
+        #seven:checked~.div2{
+            transform:translate(20px,50px);
+        }
+        #eight:checked~.div2{
+            transform:translate(50px,100px);
+        }
+        #nine:checked~.div2{
+            transform:scale(1,2);
+        }
+
+
+    </style>
+</head>
+<body>
+     <diV class="div1">
+    
+    <input type="radio" id="none" name="transform">transform:none<br>
+    <input type="radio" id="one" name="transform">transform:rotate(10deg)<br>
+    <input type="radio" id="two" name="transform">transform:rotate(45deg)<br>
+    <input type="radio" id="three" name="transform">transform:rotate3d(1,2,1,45deg)<br>
+    <input type="radio" id="four" name="transform">transform:skewX(45deg)<br>
+    <input type="radio" id="five" name="transform">transform:skewy(45deg)<br>
+    <input type="radio" id="six" name="transform">transform:scale(2,2)<br>
+    <input type="radio" id="seven" name="transform">translate(20px,50px)<br>
+    <input type="radio" id="eight" name="transform">translate(50px,100px)<br>
+    <input type="radio" id="nine" name="transform">transform:scale(1,2)<br>
+    
+    <div class="div2"></div>
+    </diV>
+    
+   
+</body>
+</html>
